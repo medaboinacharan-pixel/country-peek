@@ -12,7 +12,7 @@ function Home() {
   const [sortBy, setSortBy] = useState("");
 
   useEffect(() => {
-    if (!query) {
+    if (!query.trim()) {
       setCountries([]);
       setError(null);
       return;
@@ -86,6 +86,10 @@ function Home() {
             <CountryCard key={country.cca3} country={country} />
           ))}
         </div>
+      )}
+
+      {!loading && !error && displayed.length === 0 && countries.length > 0 && (
+        <p className="home__status">No countries found for this region</p>
       )}
 
       {!loading && !error && countries.length === 0 && query && (
