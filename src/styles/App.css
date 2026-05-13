@@ -54,3 +54,62 @@
 .home__status--error {
   color: red;
 }
+
+.country-page {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.country-page__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.country-page__flag {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.country-page__name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.country-page__official {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.country-page__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.border-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 4px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.page-status {
+  padding: 20px;
+}
+
+.page-status--error {
+  color: red;
+}
