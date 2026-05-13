@@ -1,3 +1,43 @@
+:root {
+  --bg: #f7f7f7;
+  --text: #222;
+  --card-bg: white;
+  --header-bg: #1e66ff;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --card-bg: #1e1e1e;
+  --header-bg: #2a2a2a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  background: var(--header-bg);
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.filter-bar select {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.theme-toggle {
+  margin-left: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -7,7 +47,7 @@
 
 .card {
   display: block;
-  background: white;
+  background: var(--card-bg);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
