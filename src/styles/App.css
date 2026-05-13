@@ -153,3 +153,17 @@ body {
 .page-status--error {
   color: red;
 }
+
+.fav-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.fav-btn--saved {
+  color: red;
+  font-weight: bold;
+}
