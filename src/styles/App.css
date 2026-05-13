@@ -1,0 +1,56 @@
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.card {
+  display: block;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.card__flag {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 12px;
+}
+
+.card__name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card__body p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #444;
+}
+
+.card__body p span {
+  font-weight: 600;
+}
+
+.home__status {
+  padding: 20px;
+  color: #555;
+}
+
+.home__status--error {
+  color: red;
+}
