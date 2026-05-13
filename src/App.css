@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: #1e66ff;
+  color: white;
+}
+
+.header__brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 15px;
+}
+
+.search-bar {
+  padding: 20px;
+}
+
+.search-bar__input {
+  width: 100%;
+  max-width: 480px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.home {
+  padding: 20px;
+}
+
+.home__placeholder {
+  margin-top: 20px;
+  color: gray;
+}
+
+.not-found {
+  padding: 20px;
+}
